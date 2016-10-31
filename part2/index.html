@@ -11,6 +11,19 @@
   </head>
 
   <body>
-    <h1>Hello, world!</h1>
+    <div id="app">
+      <h1>{{message}}</h1>
+    </div>
   </body>
+
+  <script src="https://unpkg.com/vue@2.0.3/dist/vue.js"></script>
+
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        message: 'Hello Vue World'
+      }
+    })
+  </script>
 </html>
